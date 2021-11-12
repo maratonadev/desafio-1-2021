@@ -10,13 +10,13 @@
 - [3. Objetivo](#3-objetivo)
 - [4. Tecnologias aplicadas](#4-tecnologias-aplicadas)
 - [5. Desarrollo de la Solución](#5-desarrollo-de-la-solución)
-  - [5.1. Pré-requisitos](#51-pré-requisitos)
+  - [5.1. Pre-requisitos](#51-pre-requisitos)
   - [5.2. Resumen de Tareas](#52-resumen-de-tareas)
   - [5.3. Desarollo](#53-desarollo)
 - [6. Envío](#6-submissão)
 - [7. Sobre la evaluación](#7-sobre-la-evaluación)
 
-## Para te ayudar
+## Para ayudarte
 
 - [Material de Apoyo](#materiales-de-apoyo)
 
@@ -33,7 +33,7 @@ La plataforma bancaria Bantotal ingresa al mercado en 1991 y se convierte en lí
 Bantotal entregará como premio un voucher de compra por valor de USD 500
 (quinientos dólares) a las dos personas mejor puntuadas de su desafío.
 
-## 2. Desafio de negócio
+## 2. Desafio de negocio
 
 Cada vez que un cliente solicita un crédito a una institución financiera se activan varios procesos y controles internos los cuales son necesarios para la evaluación de la solicitud recibida. De esta forma se analizan manualmente mucha información vinculada al perfil del cliente, destinos del crédito, actividad laboral, ingresos, condiciones de la vivienda entre otros datos demográficos. Adicionalmente la institución hace uso de los denominados Buró de créditos para conocer el historial crediticio del cliente para poder definir el perfil crediticio del cliente. Junto con otros historiales propios, información proveniente de otros créditos, nivel de cumplimiento y comportamiento en sus productos contratados la institución aprueba un monto a prestar y un plazo para su devolución o rechaza la solicitud.
 
@@ -105,7 +105,7 @@ Y como salida un valor binario que representa si se debe permitir o no el prést
 
 **Atención**: los datos proporcionados en este desafío son ficticios, cualquier correlación con la realidad es mera coincidencia.
 
-Para comenzar, siga el paso a paso a continuación para importar el proyecto del desafío con los datos y el Notebook en Watson Studio. Alternativamente, también puedes ejecutar el [Notebook](../../assets/notebooks/notebook-es.ipynb) en otros entornos. En el Notebook encontrarás todas las instrucciones para crear un modelo de Machine Learning y publicarlo en Watson Machine Learning.
+Para comenzar, sigue el paso a paso a continuación para importar el proyecto del desafío con los datos y el Notebook en Watson Studio. Alternativamente, también puedes ejecutar el [Notebook](../../assets/notebooks/notebook-es.ipynb) en otros entornos. En el Notebook encontrarás todas las instrucciones para crear un modelo de Machine Learning y publicarlo en Watson Machine Learning.
 
 #### Importación de un proyecto a Watson Studio
 
@@ -121,35 +121,35 @@ Después de abrir la nueva página, haga clic en `Create a project from a sample
 
 ![creando.png](https://s3.br-sao.cloud-object-storage.appdomain.cloud/marathon-static/creating.png)
 
-Haga clic en `Drop a file here or browse for file to upload` o arrastre tu archivo al área resaltada.
+Haga clic en `Drop a file here or browse for file to upload` o arrastra tu archivo al área resaltada.
 
 ![seleccionar-archivo](https://s3.br-sao.cloud-object-storage.appdomain.cloud/marathon-static/select-file.png)
 
-Después de cargarlo, dé a tu proyecto un nombre y una descripción si lo desea.
+Después de cargarlo, dale un nombre a tu proyecto y una descripción, si así lo deseas.
 
 ![naming](https://s3.br-sao.cloud-object-storage.appdomain.cloud/marathon-static/name.png)
 
 ¡Listo!
 
-Ahora simplemente vaya a tu proyecto y a la pestaña `Assets` para ver la lista de archivos y Notebooks.
+Ahora simplemente ve a la pestaña `Assets` de tu proyecto para ver la lista de archivos y Notebooks.
 
 ![assets.png](https://s3.br-sao.cloud-object-storage.appdomain.cloud/marathon-static/assets.png)
 
-Desde aquí, podrás abrir el Notebook en tu proyecto y seguir las instrucciones que contiene para llevar a cabo el desafío.
+Desde aquí, podrás abrir el Notebook en tu proyecto y seguir las instrucciones para llevar a cabo el desafío.
 
 ## 6. Envío
 
-Una vez tenga el modelo listo y online en una instancia de Watson Machine Learning, el último paso es realizar el envío. Recuerda que solo se aceptará un envío para el desafío, así que pruébelo bien antes de enviarlo.
+Una vez tenga el modelo listo y online en una instancia de Watson Machine Learning, el último paso es realizar el envío. Recuerda que sólo se aceptará un envío para el desafío, así que pruébelo bien antes de enviarlo.
 
 Para enviar, debe acceder a la página de desafío: [https://maratona.dev/challenges/1](https://maratona.dev/challenges/1) y enviar sus credenciales de servicio, junto con un archivo `.zip`, hasta 10 MB, que contiene el código fuente de la solución (recuerde eliminar las dependencias y los conjuntos de datos para que no ocupen espacio). La página se hara uma prueba para verificar que las credenciales sean correctas.
 
-Las evaluaciones solo comenzarán después de la primera semana del desafío. Una vez enviadas, las credenciales para acceder a su solución se guardarán y se utilizarán para la evaluación posteriormente. **¡No elimine ningún servicio utilizado para el desafío antes de la evaluación!** Si los servicios cuyas credenciales fueron enviadas no están disponibles en la fecha de evaluación, la submisión se calificará con cero. En ese caso, se permitirá un nuevo envío.
+Las evaluaciones sólo comenzarán después de la primera semana del desafío. Una vez enviadas, las credenciales para acceder a su solución se guardarán y se utilizarán para la evaluación posteriormente. **¡No elimine ningún servicio utilizado para el desafío antes de la evaluación!** Si los servicios cuyas credenciales fueron enviadas no están disponibles en la fecha de evaluación, la submisión se calificará con cero. En ese caso, se permitirá un nuevo envío.
 
 Podrá seguir el estado del envío accediendo a la [página del desafío](https://maratona.dev/challenges/1), iniciando sesión en su cuenta.
 
 ## 7. Sobre la evaluación
 
-Una semana después del inicio del desafío, uestro sistema de evaluación automatizado iniciará las evaluaciones. Utilizará las credenciales enviadas para probar el modelo enviado y calculará una puntuación numérica del 1 al 100, baseado en la métrica [F<sub>1</sub>](https://en.wikipedia.org/wiki/F-score). Su solución debe estar alojada en Watson Machine Learning y el archivo `.zip` enviado debe contener todo el código utilizado para obtener la solución. De lo contrario, la puntuación se cero.
+Una semana después del inicio del desafío, nuestro sistema de evaluación automatizado iniciará las evaluaciones. Utilizará las credenciales enviadas para probar el modelo enviado y calculará una puntuación numérica del 1 al 100, baseado en la métrica [F<sub>1</sub>](https://en.wikipedia.org/wiki/F-score). Su solución debe estar alojada en Watson Machine Learning y el archivo `.zip` enviado debe contener todo el código utilizado para obtener la solución. De lo contrario, la puntuación se cero.
 
 Si el desafío se entrega dentro del plazo de envío (hasta el 21 de noviembre), el participante recibirá una bonificación del 10% de la puntuación total (10 puntos), independientemente del resultado de su desafío. Por tanto, la puntuación máxima posible es 110 (puntuación de 100 + bonificación de 10).
 
