@@ -119,21 +119,21 @@ En la página de inicio, en la sección `Work with data`, haga clic en `Create a
 
 Después de abrir la nueva página, haga clic en `Create a project from a sample or file`.
 
-![creando.png](https://s3.br-sao.cloud-object-storage.appdomain.cloud/marathon-static/creating.png)
+![creando](https://s3.br-sao.cloud-object-storage.appdomain.cloud/maratona-static/creating.png)
 
 Haga clic en `Drop a file here or browse for file to upload` o arrastre tu archivo al área resaltada.
 
-![seleccionar-archivo](https://s3.br-sao.cloud-object-storage.appdomain.cloud/marathon-static/select-file.png)
+![seleccionar-archivo](https://s3.br-sao.cloud-object-storage.appdomain.cloud/maratona-static/select-file.png)
 
 Después de cargarlo, dé a tu proyecto un nombre y una descripción si lo desea.
 
-![naming](https://s3.br-sao.cloud-object-storage.appdomain.cloud/marathon-static/name.png)
+![naming](https://s3.br-sao.cloud-object-storage.appdomain.cloud/maratona-static/name.png)
 
 ¡Listo!
 
 Ahora simplemente vaya a tu proyecto y a la pestaña `Assets` para ver la lista de archivos y Notebooks.
 
-![assets.png](https://s3.br-sao.cloud-object-storage.appdomain.cloud/marathon-static/assets.png)
+![assets.png](https://s3.br-sao.cloud-object-storage.appdomain.cloud/maratona-static/assets.png)
 
 Desde aquí, podrás abrir el Notebook en tu proyecto y seguir las instrucciones que contiene para llevar a cabo el desafío.
 
