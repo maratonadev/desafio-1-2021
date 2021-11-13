@@ -73,7 +73,7 @@ Para realizar esse desafio você deverá cumprir os seguintes pré-requisitos:
 3. Ler e executar as instruções contidas no [Jupyter Notebook](../../assets/notebooks);
 4. Alterar, validar e testar o seu modelo de Machine Learning, até estar satisfeito com o resultado;
 5. Criar um deployment no Watson Machine Learning com o seu modelo;
-6. Efetuar a submissão na [página do desafio](https://maratona.dev/challenges/1).
+6. Efetuar a submissão na [página do desafio](https://maratona.dev/challenge/1).
 
 ### 5.3. Desenvolvimento
 
@@ -147,11 +147,11 @@ A partir daqui, você poderá abrir o Notebook em seu projeto e seguir as instru
 
 Com o modelo pronto, e online em uma instância de Watson Machine Learning, o último passo é realizar a submissão. Será aceita somente uma submissão para o desafio, então teste bem antes de fazer o envio.
 
-Para realizar a submissão, você deverá acessar a página do desafio: [https://maratona.dev/challenges/1](https://maratona.dev/challenges/1) e enviar as credenciais do seu serviço, juntamente com um arquivo `.zip`, de até 10MB, contendo o código fonte da solução (lembre-se de remover dependências e datasets para não ocupar espaço). A página fará um teste para verificar que as credenciais estão corretas.
+Para realizar a submissão, você deverá acessar a página do desafio: [https://maratona.dev/challenge/1](https://maratona.dev/challenge/1) e enviar as credenciais do seu serviço, juntamente com um arquivo `.zip`, de até 10MB, contendo o código fonte da solução (lembre-se de remover dependências e datasets para não ocupar espaço). A página fará um teste para verificar que as credenciais estão corretas.
 
 As avaliações só começarão a ocorrer após a primeira semana do desafio. No momento da submissão, as credenciais para acesso à sua solução serão guardadas, e usadas para avaliação posteriormente. **Não exclua nenhum serviço utilizado para o desafio antes da avaliação!** Se os serviços cujas credenciais foram enviadas não estiverem disponíveis na data de avaliação, a submissão ficará com nota zero. Nesse caso, uma nova submissão será permitida.
 
-Você poderá acompanhar o status da submissão acessando a [página do desafio](https://maratona.dev/challenges/1), logando na sua conta.
+Você poderá acompanhar o status da submissão acessando a [página do desafio](https://maratona.dev/challenge/1), logando na sua conta.
 
 ## 7. Sobre a avaliação
 

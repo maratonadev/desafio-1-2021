@@ -67,7 +67,7 @@ Para realizar este desafío, debe cumplir con los siguientes requisitos previos:
 3. Lea y ejecute las instrucciones contenidas en el [Jupyter Notebook](../../assets/notebooks);
 4. Cambie, valide y pruebe su modelo de Machine Learning, hasta que esté satisfecho con el resultado;
 5. Cree un deployment de Watson Machine Learning con su modelo;
-6. Submita su solución en la [página del desafío](https://maratona.dev/challenges/1).
+6. Submita su solución en la [página del desafío](https://maratona.dev/challenge/1).
 
 ### 5.3. Desarollo
 
@@ -141,11 +141,11 @@ Desde aquí, podrás abrir el Notebook en tu proyecto y seguir las instrucciones
 
 Una vez tenga el modelo listo y online en una instancia de Watson Machine Learning, el último paso es realizar el envío. Recuerda que sólo se aceptará un envío para el desafío, así que pruébelo bien antes de enviarlo.
 
-Para enviar, debe acceder a la página de desafío: [https://maratona.dev/challenges/1](https://maratona.dev/challenges/1) y enviar sus credenciales de servicio, junto con un archivo `.zip`, hasta 10 MB, que contiene el código fuente de la solución (recuerde eliminar las dependencias y los conjuntos de datos para que no ocupen espacio). La página se hara uma prueba para verificar que las credenciales sean correctas.
+Para enviar, debe acceder a la página de desafío: [https://maratona.dev/challenge/1](https://maratona.dev/challenge/1) y enviar sus credenciales de servicio, junto con un archivo `.zip`, hasta 10 MB, que contiene el código fuente de la solución (recuerde eliminar las dependencias y los conjuntos de datos para que no ocupen espacio). La página se hara uma prueba para verificar que las credenciales sean correctas.
 
 Las evaluaciones sólo comenzarán después de la primera semana del desafío. Una vez enviadas, las credenciales para acceder a su solución se guardarán y se utilizarán para la evaluación posteriormente. **¡No elimine ningún servicio utilizado para el desafío antes de la evaluación!** Si los servicios cuyas credenciales fueron enviadas no están disponibles en la fecha de evaluación, la submisión se calificará con cero. En ese caso, se permitirá un nuevo envío.
 
-Podrá seguir el estado del envío accediendo a la [página del desafío](https://maratona.dev/challenges/1), iniciando sesión en su cuenta.
+Podrá seguir el estado del envío accediendo a la [página del desafío](https://maratona.dev/challenge/1), iniciando sesión en su cuenta.
 
 ## 7. Sobre la evaluación
 
