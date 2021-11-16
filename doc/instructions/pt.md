@@ -81,29 +81,29 @@ O desafio consiste na elaboração de um modelo de Machine Learning para prediç
 
 O modelo deve receber como entrada os seguintes dados:
 
-```json
+```python
 [
-  "ID",
-  "CHECKING_BALANCE",
-  "PAYMENT_TERM",
-  "CREDIT_HISTORY",
-  "LOAN_PURPOSE",
-  "LOAN_AMOUNT",
-  "EXISTING_SAVINGS",
-  "EMPLOYMENT_DURATION",
-  "INSTALLMENT_PERCENT",
-  "SEX",
-  "OTHERS_ON_LOAN",
-  "CURRENT_RESIDENCE_DURATION",
-  "PROPERTY",
-  "AGE",
-  "INSTALLMENT_PLANS",
-  "HOUSING",
-  "EXISTING_CREDITS_COUNT",
-  "JOB_TYPE",
-  "DEPENDENTS",
-  "TELEPHONE",
-  "FOREIGN_WORKER"
+  "ID", # Número de identificação do cliente
+  "CHECKING_BALANCE", # Saldo em conta corrente do cliente
+  "PAYMENT_TERM", # Número de dias que o cliente tem para pagar o empréstimo
+  "CREDIT_HISTORY", # Como está a situação de crédito passada do cliente
+  "LOAN_PURPOSE", # Motivação do empréstimo
+  "LOAN_AMOUNT", # Valor do empréstimo
+  "EXISTING_SAVINGS", # Saldo de conta poupança
+  "EMPLOYMENT_DURATION", # Quantos anos o cliente está no último emprego
+  "INSTALLMENT_PERCENT", # Em quantas parcelas o empréstimo deve ser pago
+  "SEX", # Sexo
+  "OTHERS_ON_LOAN", # Se existe um fiador ou outro aplicante para o empréstimo
+  "CURRENT_RESIDENCE_DURATION", # Anos em que o cliente está vivendo na última casa
+  "PROPERTY", # Se o cliente possui alguma propriedade em nome
+  "AGE", # Idade
+  "INSTALLMENT_PLANS", # Plano de financiamento, podendo ser do banco, externo, ou nenhum
+  "HOUSING", # Tem casa própria ou não
+  "EXISTING_CREDITS_COUNT", # Número de empréstimos que o cliente já tem
+  "JOB_TYPE", # Tipo de emprego: 0 - desempregado, 1 - Não qualificado, 2 - Autônomo, 3 - Qualificado
+  "DEPENDENTS", # Número de pessoas com acesso à conta
+  "TELEPHONE", # Se o cliente tem telefone cadastrado ou não
+  "FOREIGN_WORKER" # Se o cliente trabalha num país externo ao do banco ou não
 ]
 ```
 
