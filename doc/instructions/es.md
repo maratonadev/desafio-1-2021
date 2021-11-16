@@ -4,16 +4,17 @@
 # Desafio 01 | Bantotal
 
 - [1. Sobre Bantotal](#1-sobre-bantotal)
-  - [1.1. Introducción](#11-introducción)
-  - [1.2. Premiación](#12-premiación)
-- [2. Desafio de negócio](#2-desafio-de-negócio)
+- [1.1. Introducción](#11-introducción)
+- [1.2. Premiación](#12-premiación)
+- [2. Desafio de negocio](#2-desafio-de-negocio)
 - [3. Objetivo](#3-objetivo)
 - [4. Tecnologias aplicadas](#4-tecnologias-aplicadas)
 - [5. Desarrollo de la Solución](#5-desarrollo-de-la-solución)
-  - [5.1. Pre-requisitos](#51-pre-requisitos)
-  - [5.2. Resumen de Tareas](#52-resumen-de-tareas)
-  - [5.3. Desarollo](#53-desarollo)
-- [6. Envío](#6-submissão)
+- [5.1. Pre-requisitos](#51-pre-requisitos)
+- [5.2. Resumen de Tareas](#52-resumen-de-tareas)
+- [5.3. Desarollo](#53-desarollo)
+    - [Importación de un proyecto a Watson Studio](#importación-de-un-proyecto-a-watson-studio)
+- [6. Envío](#6-envío)
 - [7. Sobre la evaluación](#7-sobre-la-evaluación)
 
 ## Para ayudarte
@@ -30,26 +31,35 @@ La plataforma bancaria Bantotal ingresa al mercado en 1991 y se convierte en lí
 
 ### 1.2. Premiación
 
-Bantotal entregará como premio un voucher de compra por valor de USD 500
-(quinientos dólares) a las dos personas mejor puntuadas de su desafío.
+Bantotal entregará como premio un voucher de compra por valor de USD 500 (quinientos dólares) a las dos personas mejor puntuadas en su desafío.
 
 ## 2. Desafio de negocio
 
-Cada vez que un cliente solicita un crédito a una institución financiera se activan varios procesos y controles internos los cuales son necesarios para la evaluación de la solicitud recibida. De esta forma se analizan manualmente mucha información vinculada al perfil del cliente, destinos del crédito, actividad laboral, ingresos, condiciones de la vivienda entre otros datos demográficos. Adicionalmente la institución hace uso de los denominados Buró de créditos para conocer el historial crediticio del cliente para poder definir el perfil crediticio del cliente. Junto con otros historiales propios, información proveniente de otros créditos, nivel de cumplimiento y comportamiento en sus productos contratados la institución aprueba un monto a prestar y un plazo para su devolución o rechaza la solicitud.
+Cada vez que un cliente solicita un crédito a una institución financiera se activan varios procesos y controles internos, necesarios para la evaluación de la solicitud recibida. De esta forma, se analizan manualmente mucha información vinculada al perfil del cliente, destinos del crédito, actividad laboral, ingresos, condiciones de la vivienda, entre otros datos demográficos. 
+
+Adicionalmente, la institución hace uso de los denominados Buró de créditos para conocer el historial crediticio del cliente con el fin de definir su perfil crediticio. Junto con otros historiales propios, información proveniente de otros créditos, nivel de cumplimiento y comportamiento en sus productos contratados, la institución aprueba un monto a prestar y un plazo para su devolución, o rechaza la solicitud.
 
 ## 3. Objetivo
 
-El desafío consiste en crear un modelo de inteligencia artificial capaz de realizar un análisis de riesgo para predecir si se debe o no hacer un préstamo a un cliente. Para ello, se espera el uso de un modelo de Machine Learning capaz de realizar una clasificación. El modelo se puede desarrollar en la plataforma [Watson Studio](https://cloud.ibm.com/catalog/services/watson-studio) y debe publicarse en una instancia de [Watson Machine Learning](https://cloud.ibm.com/catalog/services/machine-learning). El modelo debe entrenarse con el conjunto de datos disponible en este repositorio, que contiene datos de clientes bancarios, como datos demográficos, sobre sus cuentas y préstamos realizados.
+El desafío consiste en crear un modelo de inteligencia artificial capaz de realizar un análisis de riesgo para predecir si se debe o no realizarse un préstamo a un cliente. Para ello, se espera el uso de un modelo de Machine Learning capaz de realizar una clasificación. 
+
+El modelo se puede desarrollar en la plataforma [Watson Studio](https://cloud.ibm.com/catalog/services/watson-studio) y debe publicarse en una instancia de [Watson Machine Learning](https://cloud.ibm.com/catalog/services/machine-learning).
+
+El modelo debe entrenarse con el conjunto de datos disponible en este repositorio, que contiene datos de clientes bancarios como datos demográficos, sus cuentas y préstamos realizados.
 
 ## 4. Tecnologias aplicadas
 
-Para este desafío, se utilizarán los siguientes servicios de IBM Cloud:
+Para este desafío se utilizarán los siguientes servicios de IBM Cloud:
 
 - [Watson Studio](https://cloud.ibm.com/catalog/services/watson-studio), también conocido como Cloud Pak for Data as a Service. Este servicio permite el uso de una variedad de herramientas relacionadas con la ciencia de datos, incluida la ejecución de Jupyter Notebooks con procesadores en la nube.
 
-- [Watson Machine Learning](https://cloud.ibm.com/catalog/services/machine-learning) (WML). Este servicio proporciona una serie de recursos para crear, capacitar y publicar modelos de aprendizaje automático. Para la validación del desafío, solicitamos a los participantes que envíen sus modelos en forma de publicación WML. De esta manera, pudimos probar el modelo a través de llamadas HTTP.
+- [Watson Machine Learning](https://cloud.ibm.com/catalog/services/machine-learning) (WML). Este servicio proporciona una serie de recursos para crear, capacitar y publicar modelos de aprendizaje automático. Para la validación del desafío, solicitamos a los participantes que envíen sus modelos en forma de publicación WML. De esta manera, será posible validar el modelo mediante llamadas HTTP.
 
-Recomendamos usar el lenguaje [Python](https://www.python.org/), con [Jupyter Notebooks](https://jupyter.org/), , y es por eso que proporcionamos ejemplos de código con estas herramientas para usar en Watson Studio. Sin embargo, el participante es libre de usar el lenguaje y la herramienta que desee para resolver el desafío, siempre que pueda publicar el modelo en [Watson Machine Learning](https://cloud.ibm.com/catalog/services/machine-learning). Puede consultar los _frameworks_ compatibles [en esta página](https://dataplatform.cloud.ibm.com/docs/content/wsj/analyze-data/pm_service_supported_frameworks.html?context=analytics&audience=wdp).
+Recomendamos usar el lenguaje [Python](https://www.python.org/), con [Jupyter Notebooks](https://jupyter.org/), por lo que que proporcionamos ejemplos de código con estas herramientas, para usarlos en Watson Studio.
+
+Sin embargo, el participante es libre de usar el lenguaje y la herramienta que desee para resolver el desafío, siempre que pueda publicar el modelo en [Watson Machine Learning](https://cloud.ibm.com/catalog/services/machine-learning).
+
+Pueden consultarse los _frameworks_ compatibles [en esta página](https://dataplatform.cloud.ibm.com/docs/content/wsj/analyze-data/pm_service_supported_frameworks.html?context=analytics&audience=wdp).
 
 ## 5. Desarrollo de la Solución
 
@@ -57,8 +67,8 @@ Recomendamos usar el lenguaje [Python](https://www.python.org/), con [Jupyter No
 
 Para realizar este desafío, debe cumplir con los siguientes requisitos previos:
 
-- Regístrese en la [Maratón Behind the Code](https://maratona.dev/?register=true) y confirmar su correo electrónico de registro;
-- Tener una [cuenta de IBM Cloud](https://ibm.biz/Bdf8dW), que puede ser una cuenta Lite o Pay-As-You-Go (no es necesario registrarse para el evento con la misma dirección de correo electrónico utilizada para crear su cuenta de IBM Cloud).
+- Registrarse en la [Maratón Behind the Code](https://maratona.dev/?register=true) y confirmar su correo electrónico de registro;
+- Tener una [cuenta de IBM Cloud](https://ibm.biz/Bdf8dW), que puede ser Lite o Pay-As-You-Go (no es necesario registrarse para el evento con la misma dirección de correo electrónico utilizada para crear su cuenta de IBM Cloud).
 
 ### 5.2. Resumen de Tareas
 
@@ -109,7 +119,7 @@ Para comenzar, sigue el paso a paso a continuación para importar el proyecto de
 
 #### Importación de un proyecto a Watson Studio
 
-Primero, [cree una instancia de Watson Studio](https://cloud.ibm.com/catalog/services/watson-studio) en tu cuenta de IBM Cloud, si aún no la tienes, e ingrese a [página de inicio de IBM Cloud Pak for Data as a Service](https://dataplatform.cloud.ibm.com/) a través de la instancia.
+Primero, [cree una instancia de Watson Studio](https://cloud.ibm.com/catalog/services/watson-studio) en su cuenta de IBM Cloud, si aún no la tiene, e ingrese a [página de inicio de IBM Cloud Pak for Data as a Service](https://dataplatform.cloud.ibm.com/) a través de la instancia.
 
 Descargue el archivo [project.zip](../../assets/project.zip) que se encuentra en este repositorio.
 
@@ -139,17 +149,19 @@ Desde aquí, podrás abrir el Notebook en tu proyecto y seguir las instrucciones
 
 ## 6. Envío
 
-Una vez tenga el modelo listo y online en una instancia de Watson Machine Learning, el último paso es realizar el envío. Recuerda que sólo se aceptará un envío para el desafío, así que pruébelo bien antes de enviarlo.
+Una vez tenga el modelo listo y online en una instancia de Watson Machine Learning, el último paso es realizar el envío. Recuerde que **sólo se aceptará un envío para el desafío**, así que pruébelo bien antes de enviarlo.
 
-Para enviar, debe acceder a la página de desafío: [https://maratona.dev/challenge/1](https://maratona.dev/challenge/1) y enviar sus credenciales de servicio, junto con un archivo `.zip`, hasta 10 MB, que contiene el código fuente de la solución (recuerde eliminar las dependencias y los conjuntos de datos para que no ocupen espacio). La página se hara uma prueba para verificar que las credenciales sean correctas.
+Para enviar, debe acceder a la página de desafío: [https://maratona.dev/challenge/1](https://maratona.dev/challenge/1) y enviar sus credenciales de servicio, junto con un archivo `.zip`, hasta 10 MB, que contiene el código fuente de la solución (recuerde eliminar las dependencias y los conjuntos de datos para que no ocupen espacio). La página probará las credenciales para verificar que sean correctas.
 
-Las evaluaciones sólo comenzarán después de la primera semana del desafío. Una vez enviadas, las credenciales para acceder a su solución se guardarán y se utilizarán para la evaluación posteriormente. **¡No elimine ningún servicio utilizado para el desafío antes de la evaluación!** Si los servicios cuyas credenciales fueron enviadas no están disponibles en la fecha de evaluación, la submisión se calificará con cero. En ese caso, se permitirá un nuevo envío.
+Las evaluaciones comenzarán luego de la primera semana del desafío.
 
-Podrá seguir el estado del envío accediendo a la [página del desafío](https://maratona.dev/challenge/1), iniciando sesión en su cuenta.
+Una vez enviadas, las credenciales para acceder a su solución se guardarán y se utilizarán para la evaluación posteriormente. **¡No elimine ningún servicio utilizado para el desafío antes de la evaluación!** Si los servicios cuyas credenciales fueron enviadas no están disponibles en la fecha de evaluación, la entrega se calificará con cero. En ese caso, se permitirá un nuevo envío.
+
+Podrá seguir el estado de la entrega accediendo a la [página del desafío](https://maratona.dev/challenge/1), iniciando sesión en su cuenta.
 
 ## 7. Sobre la evaluación
 
-Una semana después del inicio del desafío, nuestro sistema de evaluación automatizado iniciará las evaluaciones. Utilizará las credenciales enviadas para probar el modelo enviado y calculará una puntuación numérica del 1 al 100, baseado en la métrica [F<sub>1</sub>](https://en.wikipedia.org/wiki/F-score). Su solución debe estar alojada en Watson Machine Learning y el archivo `.zip` enviado debe contener todo el código utilizado para obtener la solución. De lo contrario, la puntuación se cero.
+Una semana después del inicio del desafío, nuestro sistema de evaluación automatizado iniciará las evaluaciones. Utilizará las credenciales enviadas para probar el modelo enviado y calculará una puntuación numérica del 1 al 100, basado en la métrica [F<sub>1</sub>](https://en.wikipedia.org/wiki/F-score). Su solución debe estar alojada en Watson Machine Learning y el archivo `.zip` enviado debe contener todo el código utilizado para obtener la solución. De lo contrario, la puntuación será cero.
 
 Si el desafío se entrega dentro del plazo de envío (hasta el 21 de noviembre), el participante recibirá una bonificación del 10% de la puntuación total (10 puntos), independientemente del resultado de su desafío. Por tanto, la puntuación máxima posible es 110 (puntuación de 100 + bonificación de 10).
 
