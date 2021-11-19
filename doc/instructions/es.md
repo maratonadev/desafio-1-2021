@@ -4,8 +4,8 @@
 # Desafio 01 | Bantotal
 
 - [1. Sobre Bantotal](#1-sobre-bantotal)
-- [1.1. Introducción](#11-introducción)
-- [1.2. Premiación](#12-premiación)
+  - [1.1. Introducción](#11-introducción)
+  - [1.2. Premiación](#12-premiación)
 - [2. Desafio de negocio](#2-desafio-de-negocio)
 - [3. Objetivo](#3-objetivo)
 - [4. Tecnologias aplicadas](#4-tecnologias-aplicadas)
@@ -13,7 +13,7 @@
 - [5.1. Pre-requisitos](#51-pre-requisitos)
 - [5.2. Resumen de Tareas](#52-resumen-de-tareas)
 - [5.3. Desarollo](#53-desarollo)
-    - [Importación de un proyecto a Watson Studio](#importación-de-un-proyecto-a-watson-studio)
+  - [Importación de un proyecto a Watson Studio](#importación-de-un-proyecto-a-watson-studio)
 - [6. Envío](#6-envío)
 - [7. Sobre la evaluación](#7-sobre-la-evaluación)
 
@@ -35,13 +35,13 @@ Bantotal entregará como premio un voucher de compra por valor de USD 500 (quini
 
 ## 2. Desafio de negocio
 
-Cada vez que un cliente solicita un crédito a una institución financiera se activan varios procesos y controles internos, necesarios para la evaluación de la solicitud recibida. De esta forma, se analizan manualmente mucha información vinculada al perfil del cliente, destinos del crédito, actividad laboral, ingresos, condiciones de la vivienda, entre otros datos demográficos. 
+Cada vez que un cliente solicita un crédito a una institución financiera se activan varios procesos y controles internos, necesarios para la evaluación de la solicitud recibida. De esta forma, se analizan manualmente mucha información vinculada al perfil del cliente, destinos del crédito, actividad laboral, ingresos, condiciones de la vivienda, entre otros datos demográficos.
 
 Adicionalmente, la institución hace uso de los denominados Buró de créditos para conocer el historial crediticio del cliente con el fin de definir su perfil crediticio. Junto con otros historiales propios, información proveniente de otros créditos, nivel de cumplimiento y comportamiento en sus productos contratados, la institución aprueba un monto a prestar y un plazo para su devolución, o rechaza la solicitud.
 
 ## 3. Objetivo
 
-El desafío consiste en crear un modelo de inteligencia artificial capaz de realizar un análisis de riesgo para predecir si se debe o no realizarse un préstamo a un cliente. Para ello, se espera el uso de un modelo de Machine Learning capaz de realizar una clasificación. 
+El desafío consiste en crear un modelo de inteligencia artificial capaz de realizar un análisis de riesgo para predecir si se debe o no realizarse un préstamo a un cliente. Para ello, se espera el uso de un modelo de Machine Learning capaz de realizar una clasificación.
 
 El modelo se puede desarrollar en la plataforma [Watson Studio](https://cloud.ibm.com/catalog/services/watson-studio) y debe publicarse en una instancia de [Watson Machine Learning](https://cloud.ibm.com/catalog/services/machine-learning).
 
@@ -149,19 +149,19 @@ Desde aquí, podrás abrir el Notebook en tu proyecto y seguir las instrucciones
 
 ## 6. Envío
 
-Una vez tenga el modelo listo y online en una instancia de Watson Machine Learning, el último paso es realizar el envío. Recuerde que **sólo se aceptará un envío para el desafío**, así que pruébelo bien antes de enviarlo.
+Una vez tenga el modelo listo, el último paso es realizar el envío. Recuerde que **sólo se aceptará un envío para el desafío**, así que pruébelo bien antes de enviarlo.
 
-Para enviar, debe acceder a la página de desafío: [https://maratona.dev/challenge/1](https://maratona.dev/challenge/1) y enviar sus credenciales de servicio, junto con un archivo `.zip`, hasta 10 MB, que contiene el código fuente de la solución (recuerde eliminar las dependencias y los conjuntos de datos para que no ocupen espacio). La página probará las credenciales para verificar que sean correctas.
+🚨 CAMBIO EN EL MECANISMO DE ENVÍO 🚨
 
-Las evaluaciones comenzarán luego de la primera semana del desafío.
+Debido a problemas con los límites del plan gratuito de Watson Machine Learning, cambiamos el sistema de envío para solicitar un archivo CSV. Para entregar el desafío, debe cambiar el [archivo con la tabla de respuestas](../../assets/data/ANSWERS.csv) disponible en ese repositorio, completando el valor de la columna `ALLOW` en las 1000 líneas del archivo con las predicciones de su modelo (valores 0 o 1). Evaluaremos su solución en función de las respuestas en el archivo CSV.
 
-Una vez enviadas, las credenciales para acceder a su solución se guardarán y se utilizarán para la evaluación posteriormente. **¡No elimine ningún servicio utilizado para el desafío antes de la evaluación!** Si los servicios cuyas credenciales fueron enviadas no están disponibles en la fecha de evaluación, la entrega se calificará con cero. En ese caso, se permitirá un nuevo envío.
+Para enviar, debe acceder a la página de desafío: [https://maratona.dev/challenge/1](https://maratona.dev/challenge/1) y enviar el archivo CSV con las respuestas, junto con un archivo `.zip`, hasta 10 MB, que contiene el código fuente de la solución (recuerde eliminar las dependencias y los conjuntos de datos para que no ocupen espacio). La página probará el archivo CSV para verificar que se encuentra en el formato correcto.
 
 Podrá seguir el estado de la entrega accediendo a la [página del desafío](https://maratona.dev/challenge/1), iniciando sesión en su cuenta.
 
 ## 7. Sobre la evaluación
 
-Una semana después del inicio del desafío, nuestro sistema de evaluación automatizado iniciará las evaluaciones. Utilizará las credenciales enviadas para probar el modelo enviado y calculará una puntuación numérica del 1 al 100, basado en la métrica [F<sub>1</sub>](https://en.wikipedia.org/wiki/F-score). Su solución debe estar alojada en Watson Machine Learning y el archivo `.zip` enviado debe contener todo el código utilizado para obtener la solución. De lo contrario, la puntuación será cero.
+Una semana después del inicio del desafío, nuestro sistema de evaluación automatizado iniciará las evaluaciones. Utilizará los datos para calcular una puntuación numérica del 1 al 100, basado en la métrica [F<sub>1</sub>](https://en.wikipedia.org/wiki/F-score). El archivo `.zip` enviado debe contener todo el código utilizado para obtener la solución. De lo contrario, la puntuación será cero.
 
 Si el desafío se entrega dentro del plazo de envío (hasta el 21 de noviembre), el participante recibirá una bonificación del 10% de la puntuación total (10 puntos), independientemente del resultado de su desafío. Por tanto, la puntuación máxima posible es 110 (puntuación de 100 + bonificación de 10).
 

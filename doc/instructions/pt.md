@@ -145,17 +145,19 @@ A partir daqui, você poderá abrir o Notebook em seu projeto e seguir as instru
 
 ## 6. Submissão
 
-Com o modelo pronto, e online em uma instância de Watson Machine Learning, o último passo é realizar a submissão. Será aceita somente uma submissão para o desafio, então teste bem antes de fazer o envio.
+Com o modelo pronto, o último passo é realizar a submissão. Será aceita somente uma submissão para o desafio, então teste bem antes de fazer o envio.
 
-Para realizar a submissão, você deverá acessar a página do desafio: [https://maratona.dev/challenge/1](https://maratona.dev/challenge/1) e enviar as credenciais do seu serviço, juntamente com um arquivo `.zip`, de até 10MB, contendo o código fonte da solução (lembre-se de remover dependências e datasets para não ocupar espaço). A página fará um teste para verificar que as credenciais estão corretas.
+🚨 MUDANÇA NO MECANISMO DE SUBMISSÃO 🚨
 
-As avaliações só começarão a ocorrer após a primeira semana do desafio. No momento da submissão, as credenciais para acesso à sua solução serão guardadas, e usadas para avaliação posteriormente. **Não exclua nenhum serviço utilizado para o desafio antes da avaliação!** Se os serviços cujas credenciais foram enviadas não estiverem disponíveis na data de avaliação, a submissão ficará com nota zero. Nesse caso, uma nova submissão será permitida.
+Por conta de problemas com os limites do plano gratuito do Watson Machine Learning, alteramos o sistema de submissão para pedir um arquivo CSV. Para entregar o desafio, você deverá alterar o [arquivo com a tabela-resposta](../../assets/data/ANSWERS.csv) disponível nesse repositório, preenchendo o valor da coluna `ALLOW` em todas as 1000 linhas com as predições do seu modelo (valores 0 ou 1). Iremos avaliar sua solução nos baseando nas respostas do arquivo CSV.
+
+Para realizar a submissão, você deverá acessar a página do desafio: [https://maratona.dev/challenge/1](https://maratona.dev/challenge/1) e enviar o arquivo CSV com as respostas, juntamente com um arquivo `.zip`, de até 10MB, contendo o código fonte da solução (lembre-se de remover dependências e datasets para não ocupar espaço). A página fará um teste para verificar se o arquivo CSV está no formato correto.
 
 Você poderá acompanhar o status da submissão acessando a [página do desafio](https://maratona.dev/challenge/1), logando na sua conta.
 
 ## 7. Sobre a avaliação
 
-Uma semana após o início do desafio, nosso sistema de avaliação automática começará as avaliações. Ele irá utilizar as credenciais enviadas para realizar testes no modelo enviado, e calcular uma pontuação numérica de 1 até 100, baseada na métrica [F<sub>1</sub>](https://en.wikipedia.org/wiki/F-score). Sua solução deve obrigatoriamente estar hospedada no Watson Machine Learning, e o arquivo `.zip` enviado deve conter todo o código utilizado para obter a solução. Caso contrário, a pontuação será zerada.
+Uma semana após o início do desafio, nosso sistema de avaliação automática começará as avaliações. Ele irá utilizar os dados enviados para calcular uma pontuação numérica de 1 até 100, baseada na métrica [F<sub>1</sub>](https://en.wikipedia.org/wiki/F-score). O arquivo `.zip` enviado deve conter todo o código utilizado para obter a solução. Caso contrário, a pontuação será zerada.
 
 Caso o desafio seja entregue dentro do prazo de envio (até 21 de novembro), o participante receberá uma bonificação de 10% da pontuação total (10 pontos), independendo do resultado de seu desafio. A pontuação máxima possível, portanto, é 110 (100 de avaliação + 10 de bônus).
 
